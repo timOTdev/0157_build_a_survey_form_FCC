@@ -12,15 +12,28 @@
 </head>
 
 <body>
-  <h1>Sanity Check</h1>
+  <header>
+    <h1 id="title">Champiñones Inspección</h1>
+    <p id="description">Las preguntas: cuales prefiere los champiñones?</p>
+  </header>
+  <form id="survey-form">
+    <label for="name">Nombre
+      <input id="name" type="text" name="name" placeholder="Entra su nombre" required />
+    </label>
+    <label for="email">Correo Electrónico
+      <input id="email" type="email" name="email" placeholder="Entra su correo electrónico" required />
+    </label>
+  </form>
+  <footer>
+    <p>Hace de Timothy Hoang ©
+      <span id="currentYear"></span>
+    </p>
+  </footer>
+
   <!--
-
   Hello Camper!
-
   For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding!
-
   - The freeCodeCamp Team
-
   -->
   <script src="index.js"></script>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
