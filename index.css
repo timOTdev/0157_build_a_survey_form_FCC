@@ -1,3 +1,18 @@
-h1 {
-  color: red;
+body {
+  background-image: url('forest.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'ABeeZee', sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
 }
