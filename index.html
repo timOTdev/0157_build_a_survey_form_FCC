@@ -16,14 +16,71 @@
     <h1 id="title">Champiñones Inspección</h1>
     <p id="description">Las preguntas: cuales prefiere los champiñones?</p>
   </header>
-  <form id="survey-form">
-    <label for="name">Nombre
-      <input id="name" type="text" name="name" placeholder="Entra su nombre" required />
-    </label>
-    <label for="email">Correo Electrónico
-      <input id="email" type="email" name="email" placeholder="Entra su correo electrónico" required />
-    </label>
-  </form>
+  <main>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name-label">Nombre</label>
+        <input id="name" type="text" name="name" placeholder="Entra su nombre..." required />
+      </div>
+      <div class="form-group">
+        <label for="email-label">Correo Electrónico</label>
+        <input id="email" type="email" name="email" placeholder="Entra su correo electrónico..." required />
+      </div>
+      <div class="form-group">
+        <label for="number-label">Edad (Opcional)</label>
+        <input id="number" type="number" name="age" placeholder="Entra su edad..." min="10" max="99" />
+      </div>
+      <div class="form-group">
+        <p>Cuales tu favoritas champiñones?</p>
+        <select>
+          <option id="dropdown" selected disabled value>Elige su favorita.</option>
+          <option>White</option>
+          <option>Portabella</option>
+          <option>Shiitake</option>
+          <option>Blue Oyster</option>
+          <option>Pink Oyster</option>
+          <option>King Oyster</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>A donde tiene los champiñones?</p>
+        <label>
+          <input name="name" value="comprar" type="radio" checked/>Comprar
+        </label>
+        <label>
+          <input name="name" value="amigos" type="radio" />Amigos
+        </label>
+        <label>
+          <input name="name" value="crecer" type="radio" />Crecer
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Que quiere apprender de los champiñones? (Elige uno o más)</p>
+        <label>
+          <input name="find" value="" type="checkbox">Encontrar
+        </label>
+        <label>
+          <input name="grow" value="" type="checkbox">Crecer
+        </label>
+        <label>
+          <input name="history" value="" type="checkbox">La historia
+        </label>
+        <label>
+          <input name="facts" value="" type="checkbox">Los hechos
+        </label>
+        <label>
+          <input name="farms" value="" type="checkbox">Las granjas de champiñones
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Tiene commentarios?</p>
+        <textarea id="comments" name="comment" placeholder="Entra sus commentarios..."></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit">Entrega</button>
+      </div>
+    </form>
+  </main>
   <footer>
     <p>Hace de Timothy Hoang ©
       <span id="currentYear"></span>
