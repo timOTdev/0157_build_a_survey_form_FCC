@@ -1,18 +1,64 @@
-body {
-  background-image: url('forest.webp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  font-family: 'ABeeZee', sans-serif;
-  color: white;
+html {
+  height: 100%;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
+  font-family: 'ABeeZee', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(green, green), url('forest.webp');
+  background-blend-mode: saturation;
+  background-size: stretch;
+  background-repeat: no-repeat;
+}
+#container {
+  background: gray;
+  width: 60%;
+  margin: 0 auto;
+  border-radius:5px;
+}
+#container > * {
+  padding: 20px;
+}
+header, footer {
+  text-align: center;
+}
+main {
+  background: darkgray;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.group1 > * {
+  width: 100%;
+}
+.group1 > input {
+  margin-top: 10px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px;
   font-family: 'Roboto Slab', serif;
+}
+select {
+  font-size: 16px;
+}
+textarea {
+  width: 60%;
+  height:100px;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 5px;
+  font-family: 'Roboto Slab', serif;
+}
+.form-group #submit {
+  font-family: 'Roboto Slab', serif;
+  background: green;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
 }
